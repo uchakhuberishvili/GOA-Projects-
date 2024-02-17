@@ -1,0 +1,8 @@
+math = (50 + 100)
+math2 = (10 / 5)
+math3 = (math * math)
+print (math3)
+math4 = (math3 / 100)
+print (math4)
+math5 = (math4 - math)
+print (math5)
