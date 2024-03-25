@@ -9,7 +9,7 @@ else:
 
 #2
 
-i = 1#password = ("GoaBest123")
+i = password = ("GoaBest123")
 user_input = 0
 while user_input != password:
     user_input = input("enter the password: ")
