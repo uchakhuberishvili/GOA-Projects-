@@ -30,3 +30,25 @@ def manual_pop(List,poper):
             lis2.append(i)
     return lis2
 print(manual_pop([10,20,30,40,50],4))
+
+
+def maxs(List):
+    Max = List[0]
+    for i in List:
+        if i > Max:
+            Max = i
+    return Max
+print(maxs([1,20,34,54,123,54,77,98,45,87,89,345,123,435,54,6345,23,424,5,425,233,4]))
+
+
+
+def mins(List):
+    Min = List[0]
+    for i in List:
+        if i < Min:
+            Min = i
+    return Min
+print(mins([1,20,34,54,123,54,77,98,45,87,89,345,123,435,54,6345,23,424,5,425,233,4,0.5,0.127]))
+
+
+
