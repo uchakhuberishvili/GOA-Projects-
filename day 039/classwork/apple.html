@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Style Attribute</title>
+        
+        <style>
+            .draw{
+                height: 1000px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .origin{
+                position: relative;
+            }
+
+
+            .apple{
+                
+                width: 300px;
+                height: 300px;
+
+                border-radius: 50%;
+
+                background-color: rgb(238, 58, 58);
+                background-image: url('apple.jpg');
+
+                border: 2px solid black;
+            }
+
+
+            .leaf{
+
+                position: absolute;
+
+                width: 200px;
+                height: 200px;
+
+                background-color: green;
+                background-image: url('leaf.webp');
+
+                border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+                border: 2px solid black;
+            }
+
+            .leaf1{
+                bottom: 260px;
+                left: 130px;
+                rotate: -11deg;
+            }
+
+            .leaf2{
+                bottom: 200px;
+                left: 180px;
+                rotate: 20deg;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="draw">
+            <div class="origin">
+                <div class="leaf leaf1"></div>
+                <div class="leaf leaf2"></div>
+                <div class="apple"></div>
+            </div>
+            
+        </div>
+
+    </body>
+</html>
