@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>logo loading!...</title>
+        <style>
+            body {
+                background-color: rgb(32, 32, 32);
+            }
+            .parent {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 300px;
+                cursor: pointer;
+                transition: 3s;
+                
+            }
+            .child {
+                width: 50px;
+                height: 50px;
+                border: 4px rgb(87, 85, 85) solid;
+                margin-right: 30px;
+                border-radius: 100%;
+                cursor: pointer;
+                transition: 3s;
+                border-radius: 100%;
+                border-bottom: 4px solid rgb(255, 255, 255);
+                animation: spin 1s linear infinite;
+                
+                
+            }
+            @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+            
+            .second_child {
+                color: white;
+            }
+            /* .childs {
+                background-color: rgb(87, 85, 85);
+                width: 90%;
+                height: 90%;
+                border-radius: 100%;
+                border: 5px white solid;
+                border-bottom: black; */
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child"><div class="childs"></div></div>
+            <h1 class="second_child">LOGO</h1>
+        </div>
+    </body>
+</html>
