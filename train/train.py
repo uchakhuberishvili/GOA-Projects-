@@ -719,4 +719,3 @@ age_check = lambda age:True if age >= 18 else False
 print(age_check(12))
 print(add(5,6,7))
 
-#sorts

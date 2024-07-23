@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>KeyFrames...</title>
+        <style>
+            body {
+                background-color: burlywood;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .parent {
+                background-color: black;
+                border: 10px rgb(5, 89, 243) dotted;
+                border-radius: 10px;
+                width: 80% ;
+                height: 50px;
+                position: relative;
+            }
+
+            
+            .child {
+                width: 10%;
+                height: 90%;
+                background-color: aquamarine;
+                animation: fil 2s infinite;
+                border:  red solid 2px;
+            }
+            @keyframes fil {
+                
+                10% {
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    background-color: chartreuse;
+                    border: rgb(0, 255, 136) dotted 2px;
+                }
+                30%{
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    background-color: darkmagenta;
+                    border: rgb(218, 240, 20) solid 2px;
+                }
+                50% {
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    margin-left: 1248px;
+                    background-color: grey;
+                    border: rgb(204, 0, 255) dotted 2px;
+                }
+                100% {
+                    margin-left: 0;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    border: rgb(0, 33, 221) solid 2px;
+                }
+            }
+            .loader {
+            border: 6px solid #332222;
+            border-top: 6px solid #5213ff;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            margin-left: 50px;
+            margin-top: 5px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child"><div class="loader"></div></div>
+        </div>
+    </body>
+</html>

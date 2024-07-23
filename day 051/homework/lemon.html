@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Style Attribute</title>
+        
+        <style>
+            .draw{
+                height: 1000px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .origin{
+                position: relative;
+            }
+
+
+            .lemon{
+                
+                width: 300px;
+                height: 300px;
+
+                border: 2px solid black;
+
+                border-bottom-right-radius: 50%;
+                border-top-left-radius: 50%;
+                border-bottom-left-radius: 20px;
+                border-top-right-radius: 20px;
+
+                background-color: yellow;
+            }
+
+
+            .leaf{
+                bottom: 150px;
+                left: 270px;
+
+                rotate: 30deg;
+
+                position: absolute;
+
+                width: 200px;
+                height: 200px;
+
+                background-color: green;
+                border: 2px solid black;
+
+                border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="draw">
+            <div class="origin">
+                <div class="leaf"></div>
+                <div class="lemon"></div>
+            </div>
+            
+        </div>
+
+    </body>
+</html>

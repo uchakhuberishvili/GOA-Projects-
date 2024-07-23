@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>process</title>
+        <style>
+            body {
+                background-color: rgb(219, 154, 55);
+                margin: 0; 
+                padding: 0;
+                font-family: Arial, sans-serif; 
+            }
+            .parent {
+                background-color: rgb(19, 38, 99);
+                width: 90%;
+                height: 60px;
+                margin-top: 350px;
+                margin-left: 55px;
+                color: aliceblue;
+                background-color: rgb(107, 41, 41);
+                border-radius: 25px;
+                border: rgb(66, 36, 36) 10px solid;
+                text-align: center;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                transition: 10s;
+                transition: margin-left 10s;
+            }
+            .child {
+                transition: margin-left 10s;
+            }
+            .parent:hover .child {
+
+                margin-left: 1380px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <h1 class="child">processing...</h1>
+        </div>
+    </body>
+</html>

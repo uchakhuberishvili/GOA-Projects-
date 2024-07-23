@@ -155,7 +155,6 @@ def positive_sum(arr):
 print(positive_sum([-10,20,30,-15,123,45]))
 
 def count_positives_sum_negatives(arr):
-    List = []
     negatives = 0
     positives = 0
     for i in arr:
