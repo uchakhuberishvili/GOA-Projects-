@@ -4,3 +4,8 @@ if 0 <= index < len(names):
     print(f"The element at index {index} is: {names[index]}")
 else:
     print("enter a number between 1-5")
+
+string = "gamarjoba"
+
+print(string[2:7])
+
