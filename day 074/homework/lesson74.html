@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        button {
+            width: 200px;
+            height: 70px;
+            border-radius: 5px;
+            background-color: rgb(15, 218, 25);
+        }
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(201, 132, 41);
+        }
+        div {
+            background-color: rgb(102, 12, 68);
+            border: 3px black solid;
+            border-radius: 25px;
+            width: 50%;
+            height: 50%;
+            margin-top: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="print('You Printed Me!')">click me!</button>
+        <button onmousewheel="alert('You Wheelied The Button!')">click me!</button>
+        <button onmouseover="alert('You Hovered The button')">click me!</button>
+        <button onclick="alert('You Now Have Gained Acess!')">click me!</button>
+    </div>
+</body>
+</html>
