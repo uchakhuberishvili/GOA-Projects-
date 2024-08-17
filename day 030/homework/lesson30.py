@@ -1,8 +1,4 @@
-def upper_rev(name):
-    rev = name[::-1]
-    upper = rev.upper()
-    return upper
-print(upper_rev("hello"))
+
 
 def odd_even(names):
     odd = []
@@ -45,13 +41,3 @@ def islow_up(names):
 print(islow_up(["vano" , "DAVIT" , "LUKA" , "nika"]))
 
 
-def find(Str):
-    index = Str.find("n")
-    if index % 2 == 0:
-        return Str.upper()
-    else:
-        return Str.capitalize()
-
-test_case = "ucha"
-result = find(test_case)
-print(result)
