@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validation</title>
+  <style>
+        #message {
+      color: red;
+      margin-top: 10px;
+    }
+    #me-counter {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .warning {
+      color: red;
+    }
+    #color-display {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<form id="forms">
+    <br>
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="firstname" required>
+    <br>
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" required>
+    <br>
+    <label for="gmail">Gmail:</label>
+    <input type="email" id="gmail" name="gmail" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <label for="me">About Me:</label>
+    <textarea id="me" name="me" rows="4" maxlength="200" required></textarea>
+    <div id="me-counter">0/200 characters</div>
+    <br>
+    <label for="color-select">Select a color:</label>
+    <select id="color-select" name="color">
+      <option value="">--Select a color--</option>
+      <option value="Red">Red</option>
+      <option value="Blue">Blue</option>
+      <option value="Green">Green</option>
+    </select>
+    <div id="color-display">Selected color will be displayed here</div>
+    <br>
+    <button id="clear" type="button">Clear</button>
+    <div id="message"></div>
+</form>
+  <script src="lesson79.js">
+  </script>
+
+</body>
+</html>

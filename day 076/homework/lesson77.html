@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <p>პარაგრაფი</p>
+    <p id="paragraphs">პარაგრაფი</p>
+    <p>პარაგრაფი</p>
+    <h1 id="heading">text</h1>
+    <script src="lesson77.js">
+        var heading = document.getElementById("heading")
+        heading.textContent = ("heading შეიცვალა")
+        heading.style.color = "purple"
+        heading.style.fontSize = "150px"
+        var paragraph = document.getElementById("paragraphs");
+        paragraph.textContent = "პარაგრაფი შეიცვალა!";
+        paragraph.style.color = "red";
+        paragraph.style.fontSize = "50px";
+    </script
+</body>
+</html>
