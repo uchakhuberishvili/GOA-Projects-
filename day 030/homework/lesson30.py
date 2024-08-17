@@ -52,6 +52,6 @@ def find(Str):
     else:
         return Str.capitalize()
 
-test_case = "vano motiashvili"
+test_case = "ucha"
 result = find(test_case)
 print(result)
