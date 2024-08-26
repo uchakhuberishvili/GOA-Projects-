@@ -8,7 +8,7 @@ list33 = []
 list3 = ["banana","manana","apple","grape","orange","carrot","lemon","mandarin"]
 
 print(list3[::2])
-# ან
+#ან
 
 for i in range(len(list3)):
     if i % 2 == 0:

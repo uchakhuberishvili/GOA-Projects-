@@ -1,7 +1,7 @@
 #print("ucha")
 
 #for i in range(10):
-#    print("ucha")
+#    print(" ucha ")
 
 def name():
     for i in range(10):

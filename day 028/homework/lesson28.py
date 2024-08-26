@@ -9,7 +9,7 @@ def overall(num):
                 sum += i
         return sum
 
-# Example usage:
+#Example usage:
 number = 10
 result = overall(number)
 print(result)
