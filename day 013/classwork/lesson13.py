@@ -1,8 +1,8 @@
 usernum = int(input("enter a number: "))
 if usernum > 0:
-    print("number is positive")
+    print("number is positive ")
 elif usernum < 0:
-    print("number is negative")
+    print("number is negative ")
 else:
     print("number is 0")
 

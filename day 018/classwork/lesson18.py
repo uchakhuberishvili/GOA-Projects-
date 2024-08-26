@@ -18,8 +18,8 @@ for num in numbers:
         odd_sum = odd_sum + num
         odd_multiple = odd_multiple * num
 
-print("Odd numbers sum", odd_sum)
-print("Odd numbers multiple", odd_multiple)
+print("Odd numbers sum ", odd_sum)
+print("Odd numbers multiple ", odd_multiple)
 name = "Luka"
 
 for char in name:

@@ -3,7 +3,7 @@ while number < 21:
     print(number)
     number += 1
 
-user_input = int(input("enter your number:"))
+user_input = int(input("enter your number: "))
 num = 0
 while num<user_input:
     print(num)
