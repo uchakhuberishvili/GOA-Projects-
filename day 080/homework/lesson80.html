@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Nike Website!</title>
+    <style>
+        body {
+            background-color: rgb(1, 9, 48);
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            border-radius: 10px;
+            margin: 15px auto;
+            border: black 5px solid;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: flex-start;
+            gap: 20px; 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 95%; 
+            height: auto; 
+            padding: 10px; 
+            background-color: rgb(160, 207, 48);
+            box-sizing: border-box; 
+        }
+        .nike {
+            margin-top: 15px;
+            margin-left: 10px;
+            font-size: 24px;
+        }
+        h3 {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+        .About {
+            margin-left: auto;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+
+        @media (max-width: 768px) {
+            div {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .About {
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1.nike {
+                font-size: 20px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="nike"><a href="nah">Nike Officiall!</a></h1>
+        <h3 class="About"><a href="nah">About</a></h3>
+        <h3><a href="nah">Contact</a></h3>
+        <h3><a href="nah">Home</a></h3>
+        <h3><a href="nah">More</a></h3>
+    </div>
+</body>
+</html>
