@@ -19,10 +19,10 @@ for i in range(1,31):
 for i in range(1,11):
     print(i * i)
     
-result = 0
+results = 0
 
 for i in range(1,11):
-    result = result + i
+    results = results + i
 
 
 result = 1
