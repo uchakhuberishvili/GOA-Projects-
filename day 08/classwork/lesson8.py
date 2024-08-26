@@ -2,7 +2,7 @@ user_input = int(input("please enter your number between 1-100"))
 if user_input == 35:
     print("you won!")
 else:
-    print("you lost")
+    print("you lost!")
 print(True or False)
 is_registered = True
 is_android = True

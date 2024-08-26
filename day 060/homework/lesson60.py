@@ -13,7 +13,7 @@ def invert(lst):
 def smash(words):
     result = " ".join(words)
     return result
-print(smash("hello ucha is best"))
+print(smash("hello ucha is best!"))
 
 def between(a,b):
     result = []

@@ -1,3 +1,4 @@
+#hoo
 def square_digits(num):
     string = ""
     for i in str(num):

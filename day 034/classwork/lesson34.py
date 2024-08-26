@@ -5,7 +5,7 @@ def Num_list(List):
             even.append(i)
     i = len(even)
     return i
-print(Num_list([1,3,5,2,6,66,22,32,44]))
+print(Num_list([1,3,5,2,6,66,22,32,44,65]))
 
 
 def List(List):
