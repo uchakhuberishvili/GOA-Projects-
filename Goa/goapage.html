@@ -1,135 +1,134 @@
-<html>
-    <head>
-        <title>My Website!</title>
-        <style>
-            body {
-                background-color: rgb(54, 37, 37);
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                align-items: center;
-                margin: 0px;
-                height: 100vh;
-            }
-            .parent {
-                border: 5px black solid;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 50px;
-                background-color: rgb(50, 90, 62);
-                width: 900px;
-                height: 600px;
-                border-radius: 35px;
-                overflow: hidden;
-                position: relative;
-            }
-            .parent .image-div {
-                border: black 5px solid;
-                background-image: url('goa.png - Copy.jpg');
-                width: 500px;
-                height: 600px;
-                border-radius: 35px;
-                background-size: cover;
-            }
-            .parent .form-div {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                flex: 1;
-                padding: 20px;
-                margin-top: 30px;
-                
-            }
-            input {
-                border: 5px black solid;
-                margin-top: 20px;
-                margin-bottom: 0px;
-                padding: 0 20px;
-                box-sizing: border-box;
-                width: 300px;
-                height: 45px;
-                border-radius: 3px;
-                border: 2px solid black;
-                font-size: 16px;
-                transition: 0.25s;
-            }
-            input:hover {
-                width: 350px;
-                height: 60px;
-            }
-            .yo {
-                display: inline-block; 
-                line-height: 45px; 
-                text-decoration: none; 
-                font-size: 16px; 
-                color: rgb(179, 208, 233);
-                width: 260px;
-                height: 30px;
-                margin-top: 10px;
-                background-color: rgb(35, 45, 184);
-                border-radius: 3px;
-                border: 2px solid black;
-                cursor: pointer;
-                transition:0.25s;
-                text-align: center;
-                line-height: 30px;
-            }
-            .yo:hover {
-                width: 300px;
-                height: 40px;
-                line-height: 40px;
-            }
-            h1 {
-                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                margin-bottom: 10px;
-            }
-            p {
-                font-family:Verdana, Geneva, Tahoma, sans-serif;
-                margin-bottom: 35px;
-            }
-            a {
-                color:rgb(35, 11, 141);
-                background-color: rgb(145, 135, 135);
-                border: 2px solid black;
-                border-radius: 3px;
-                font-family:Arial, Helvetica, sans-serif;
-                padding: 8px 16px;
-                text-decoration: none;
-                transition: 0.25s;
-            }
-            .goa {
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                color: rgb(2, 34, 1);
-                border: 3px black solid;
-                background-color: gray;
-            }
-            .sign {
-                font-family:Verdana, Geneva, Tahoma, sans-serif;
-            }
-            .lo {
-                margin-bottom: 15px;
-            }
-        </style>
-    </head>
-    <body>
-        <div>
-            <div class="parent">
-                <div class="image-div"></div>
-                <div class="form-div">
-                    <form>
-                        <h2 class="goa">Goal Oriented Academy</h2>
-                        <h1 class="sign">Sign Up</h1>
-                        <input type="text" placeholder="Full Name" required>
-                        <input type="email" placeholder="Email Address" required>
-                        <input type="password" placeholder="Password" required>
-                        <input class="lo" type="password" placeholder="Confirm Password" required>
-                        <a  class="yo" href="afterlog.html">    Create Account    </a>
-                        <p>Already Have An Account?</p><a href="$">LOG IN</a>
-                    </form>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website!</title>
+    <style>
+        body {
+            background-color: rgb(54, 37, 37);
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin: 0;
+            height: 100vh;
+        }
+        .parent {
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(50, 90, 62);
+            width: 900px;
+            height: 600px;
+            border-radius: 35px;
+            overflow: hidden;
+            position: relative;
+        }
+        .parent .image-div {
+            border: 5px solid black;
+            background-image: url('goa.png - Copy.jpg');
+            background-size: cover;
+            width: 500px;
+            height: 600px;
+            border-radius: 35px 0 0 35px;
+        }
+        .parent .form-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            flex: 1;
+            padding: 20px;
+        }
+        input {
+            border: 2px solid black;
+            margin-top: 20px;
+            margin-bottom: 0;
+            padding: 0 20px;
+            box-sizing: border-box;
+            width: 300px;
+            height: 45px;
+            border-radius: 3px;
+            font-size: 16px;
+            transition: 0.25s;
+        }
+        input:hover {
+            width: 350px;
+            height: 60px;
+        }
+        .yo {
+            display: inline-block; 
+            line-height: 30px; 
+            text-decoration: none; 
+            font-size: 16px; 
+            color: rgb(179, 208, 233);
+            width: 260px;
+            height: 30px;
+            margin-top: 10px;
+            background-color: rgb(35, 45, 184);
+            border-radius: 3px;
+            border: 2px solid black;
+            cursor: pointer;
+            transition: 0.25s;
+            text-align: center;
+        }
+        .yo:hover {
+            width: 300px;
+            height: 40px;
+        }
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-bottom: 10px;
+        }
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 35px;
+        }
+        a {
+            color: rgb(35, 11, 141);
+            background-color: rgb(145, 135, 135);
+            border: 2px solid black;
+            border-radius: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: 0.25s;
+        }
+        .goa {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(2, 34, 1);
+            border: 3px solid black;
+            background-color: gray;
+            margin-bottom: 20px;
+        }
+        .sign {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .lo {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="parent">
+            <div class="image-div"></div>
+            <div class="form-div">
+                <form>
+                    <h2 class="goa">Goal Oriented Academy</h2>
+                    <h1 class="sign">Sign Up</h1>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="password" placeholder="Password" required>
+                    <input class="lo" type="password" placeholder="Confirm Password" required>
+                    <button class="yo" type="submit">Create Account</button>
+                    <p>Already Have An Account?</p>
+                    <a href="#">LOG IN</a>
+                </form>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
