@@ -21,7 +21,6 @@ document.getElementById('forms').addEventListener('submit', function(event) {
     console.log('registration completed succesfully!', database);
 });
 
-
 // const form = document.getElementById('myForm');
 
 // const database = [];
