@@ -3,3 +3,11 @@
 # Examples:
 # 5 --> [0, 1, 1, 2, 3]
 # 7 --> [0, 1, 1, 2, 3, 5, 8]
+def fib(num):
+    seq = [0, 1]
+    for i in range(2, num):
+        seq.append(seq[-1] + seq[-2])
+    return seq[:num]
+print(fib(5))
+print(fib(7))
+print(fib(20))
