@@ -1,0 +1,15 @@
+{
+  "name": "superman",
+  "version": "1.0.0",
+  "description": "first project",
+  "main": "index.js",
+  "directories": {
+    "test": "test",
+    "type": "commonjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ucha khuberishvili",
+  "license": "ISC"
+}

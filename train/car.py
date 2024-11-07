@@ -9,3 +9,9 @@ print(reverse(5))
 
 #რისი გაკეთება შეიძლება პითონით
 #what can you do with
+a = 0
+name = "hello"
+for i in name:
+    a += 1
+a -= 1
+print(a)
