@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1f1e1e;
+            background: linear-gradient(to right, #023261, #182d42);
+        }
+        .frame {
+            border: 5px solid black !important;
+            display: flex;
+            width: 870px;
+            height: 500px;
+            background-color: #062e33;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        img {
+            height: 500px;
+        }
+        .frame div {
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: white;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            margin-left: 10px;
+            display: block;
+            color: white;
+        }
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-left: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            border: 3px solid black;
+            margin-left: 20px;
+            width: 300px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media screen and (max-width: 600px) {
+            .frame {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="frame">
+        <img src="bank.png" alt="Bank Image">
+        <div>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+            <a href="register.html">Don't have an account? Register here</a>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

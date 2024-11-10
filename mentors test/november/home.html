@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Banking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #062e33;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        nav a {
+            color: white;
+            padding: 12px 18px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+
+        .container {
+            margin: 40px auto;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .balance-section {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .balance-section h2 {
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        .balance {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #4CAF50;
+            margin: 15px 0;
+            transition: color 0.5s ease, transform 0.5s ease;
+        }
+
+        .transactions-section {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .transactions-section h2 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            font-size: 1.1em;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .input-section,
+        .send-money-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .input-section input,
+        .send-money-section input {
+            padding: 10px;
+            font-size: 1.2em;
+            width: 200px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .send-money-section input[type="text"] {
+            width: 160px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Bank</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="loan-application.html">Loan</a>
+            <a href="products.html">Products</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="login.html">Logout</a>
+            <a href="view-card.html">My Card</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="balance-section">
+            <h2>Account Balance</h2>
+            <div id="balance" class="balance">$100</div>
+        </div>
+
+        <div class="input-section">
+            <input type="number" id="depositAmount" placeholder="Enter amount to add" />
+            <button id="addMoneyBtn">Add Money</button>
+        </div>
+
+        <div class="send-money-section">
+            <h2>Send Money</h2>
+            <input type="text" id="recipientName" placeholder="Recipient's Name" />
+            <input type="number" id="sendAmount" placeholder="Amount to Send" />
+            <button id="sendMoneyBtn">Send Money</button>
+        </div>
+
+        <div class="transactions-section">
+            <h2>Recent Transactions</h2>
+            <ul id="transactions">
+                <li>Salary - +$3000</li>
+                <li>Grocery Shopping - -$100</li>
+                <li>Electricity Bill - -$50</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>

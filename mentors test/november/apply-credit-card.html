@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Card - Banking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #062e33;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        nav a {
+            color: white;
+            padding: 12px 18px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+
+        .container {
+            margin: 40px auto;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .form-wrapper {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-wrapper h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"], input[type="number"], input[type="month"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #062e33;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Create Your Virtual Card</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="loan-application.html">Loan</a>
+            <a href="products.html">Products</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="login.html">Logout</a>
+            <a href="view-card.html">My Card</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="form-wrapper">
+            <h2>Card Information</h2>
+            <form id="create-card-form">
+                <label for="card-name">Cardholder Name</label>
+                <input type="text" id="card-name" name="card-name" required placeholder="John Doe">
+
+                <label for="card-number">Card Number</label>
+                <input type="number" id="card-number" name="card-number" required placeholder="1234 5678 1234 5678">
+
+                <label for="expiration-date">Expiration Date</label>
+                <input type="month" id="expiration-date" name="expiration-date" required>
+
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" name="cvv" required placeholder="123">
+
+                <button type="submit">Create Card</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Contact:khuberishviliu@gmail.com</p>
+    </div>
+
+    <script>
+        document.getElementById('create-card-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const cardName = document.getElementById('card-name').value;
+            const cardNumber = document.getElementById('card-number').value;
+            const expirationDate = document.getElementById('expiration-date').value;
+            const cvv = document.getElementById('cvv').value;
+
+            if (!cardName || !cardNumber || !expirationDate || !cvv) {
+                alert("Please fill out all fields.");
+                return;
+            }
+
+            const cardDetails = {
+                cardName,
+                cardNumber,
+                expirationDate,
+                cvv
+            };
+
+            localStorage.setItem('virtualCard', JSON.stringify(cardDetails));
+
+            alert("Your virtual card has been created! You can now view it on your card page.");
+
+            document.getElementById('create-card-form').reset();
+        });
+    </script>
+</body>
+</html>

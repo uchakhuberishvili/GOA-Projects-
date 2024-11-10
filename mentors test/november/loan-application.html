@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+        }
+
+        header {
+            background-color: #062e33;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+
+        .container {
+            margin: 40px auto;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        h3 {
+            color: #333;
+        }
+
+        #loan-balance, #monthly-payment, #repayment-status {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application - Your Bank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Loan Application</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="loan-application.html">Loan</a>
+            <a href="products.html">Products</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="login.html">Logout</a>
+            <a href="view-card.html">My Card</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Apply for a Loan</h2>
+        <form id="loan-form">
+            <label for="loan-amount">Loan Amount:</label>
+            <input type="number" id="loan-amount" placeholder="Enter loan amount" required>
+            <label for="loan-term">Loan Term (in months):</label>
+            <input type="number" id="loan-term" placeholder="Enter loan term" required>
+            <button type="submit">Apply for Loan</button>
+        </form>
+
+        <h3>Your Loan Balance</h3>
+        <div id="loan-balance">
+            Loan Amount: $0
+        </div>
+
+        <h3>Monthly Payments</h3>
+        <div id="monthly-payment">
+            Monthly Payment: $0
+        </div>
+
+        <h3>Loan Repayment Progress</h3>
+        <div id="repayment-status">
+            Amount Paid: $0 | Remaining Balance: $0
+        </div>
+
+        <h3>Make a Payment</h3>
+        <form id="payment-form">
+            <label for="payment-amount">Payment Amount:</label>
+            <input type="number" id="payment-amount" placeholder="Enter payment amount" required>
+            <button type="submit">Make Payment</button>
+        </form>
+    </div>
+
+    <script src="loan.js"></script>
+</body>
+</html>

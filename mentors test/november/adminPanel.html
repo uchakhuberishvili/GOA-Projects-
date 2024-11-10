@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #062e33;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        .container {
+            margin: 40px auto;
+            width: 90%;
+            max-width: 600px;
+        }
+        .exchange-rate {
+            margin-top: 30px;
+            text-align: center;
+        }
+        select, button {
+            padding: 10px;
+            margin: 10px;
+        }
+        #usersList {
+            margin-top: 20px;
+        }
+        .user {
+            margin-bottom: 15px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="loan-application.html">Loan</a>
+            <a href="products.html">Products</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="login.html">Logout</a>
+            <a href="view-card.html">My Card</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Welcome, Admin!</h2>
+        <p>This is the admin panel where you can manage users, settings, and more.</p>
+        
+        <div id="usersList"></div>
+
+        <div class="exchange-rate">
+            <h3>Currency Exchange Rate</h3>
+            <label for="currency">Select Currency:</label>
+            <select id="currency" name="currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="INR">INR</option>
+                <option value="AUD">AUD</option>
+            </select>
+            <button id="getRate">Get Conversion Rate</button>
+            <p id="rateOutput"></p>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
