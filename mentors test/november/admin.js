@@ -13,6 +13,7 @@ window.onload = function () {
             userDiv.innerHTML = `
                 <p>Name: ${user.name}</p>
                 <p>Email: ${user.email}</p>
+                <p>password: ${user.password}</p>
                 <p>Role: ${user.role}</p>
                 <button class="deleteUser" data-email="${user.email}">Delete</button>
             `;

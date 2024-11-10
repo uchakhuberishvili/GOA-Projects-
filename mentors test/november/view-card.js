@@ -8,6 +8,6 @@ window.onload = function() {
         document.getElementById('cvv').innerText = cardDetails.cvv;
     } else {
         alert("No card found. Please create a card first.");
-        window.location.href = "card-creation.html";
+        window.location.href = "apply-credit-card.html";
     }
 };

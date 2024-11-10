@@ -9,7 +9,8 @@
             align-items: center;
             height: 100vh;
             background-color: #1f1e1e;
-            background: linear-gradient(to right, #023261, #182d42);
+            background: linear-gradient(to right, #26507a, #00162c);
+            margin: 0;
         }
         .frame {
             border: 5px solid black !important;
@@ -19,16 +20,21 @@
             background-color: #062e33;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
         }
         img {
-            height: 500px;
+            height: 100%;
+            width: 50%;
+            object-fit: cover;
         }
         .frame div {
             padding: 20px;
+            width: 50%;
+            overflow-y: auto;
         }
         h2 {
             text-align: center;
-            color: white;
+            color: #fff;
         }
         form {
             margin-top: 20px;
@@ -36,10 +42,13 @@
         label {
             margin-left: 10px;
             display: block;
-            color: white;
+            color: #fff;
         }
-        input[type="email"], input[type="password"] {
-            width: 100%;
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 90%;
             padding: 10px;
             margin-bottom: 10px;
             margin-left: 8px;
@@ -49,7 +58,7 @@
         button {
             border: 3px solid black;
             margin-left: 20px;
-            width: 300px;
+            width: 200px;
             padding: 10px 20px;
             background-color: #4CAF50;
             color: #ffffff;
@@ -59,44 +68,67 @@
         button:hover {
             background-color: #45a049;
         }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-            display: block;
-            text-align: center;
-            margin-top: 10px;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 768px) {
             .frame {
+                flex-direction: column;
                 width: 100%;
                 height: auto;
+            }
+            img {
+                width: 100%;
+                height: 300px;
+            }
+            .frame div {
+                width: 100%;
+                padding: 15px;
+            }
+            button {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .frame {
+                padding: 10px;
+            }
+            label, input, select, button {
+                font-size: 14px;
             }
         }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Registration</title>
 </head>
 <body>
     <div class="frame">
         <img src="bank.png" alt="Bank Image">
         <div>
-            <h2>Login</h2>
-            <form id="loginForm">
+            <h2>Register</h2>
+            <form id="registerForm" action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 <br>
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
                 <br>
-                <button type="submit">Login</button>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <br>
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="user">user</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <button type="submit" id="register">Register</button>
+                <a href="login.html" style="text-decoration: none; color: white;margin-left: 40px;">Log in</a>
             </form>
-            <a href="index.html">Don't have an account? Register here</a>
         </div>
     </div>
-    <script src="login.js"></script>
+    <script src="register.js"></script>
 </body>
 </html>
