@@ -35,9 +35,9 @@ for name, tickets in ticket_counts.items():
 random.shuffle(wheel)
 
 print("\nSpinning the wheel...\n")
-for _ in range(150):
+for _ in range(50):
     selected = random.choice(wheel)
-    print(f"🎡 {selected}",)
+    print(f"🎡 {selected}",end="\r")
     time.sleep(0.1)
 
 print(" " * 50, end="\r")

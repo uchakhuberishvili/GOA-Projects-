@@ -5,7 +5,7 @@ def lottery():
     for _ in range(30):
         selected = random.choice(wheel)
         print(f"🎡 {selected}",)#end="\r")
-        time.sleep(0.5)
+        time.sleep(0.1)
 
     print(" " * 50, end="\r")
 
@@ -21,7 +21,7 @@ def lottery():
     print(f"🎉 3rd Place: {winner3} won {third_prize:.2f} GEL 🎉")
 
 bet = [
-    "ucha khuberishvili 10", "nikoloz qimeridze 10", "ilia dzindzibadze 10", 
+    "ucha khuberishvili 1000000", "nikoloz qimeridze 10", "ilia dzindzibadze 1000000", 
     "cotne gujabidze 10", "shalva shubitidze 10", "zuka abashidze 10", 
     "giga khutsishvili 10", "berdia beqauri 10", "sandro zabakhidze 10", 
     "vano motiashvili 10", "guram vakhtangashvili 10", "daniel abramiani 10", 
@@ -63,8 +63,8 @@ for name, tickets in ticket_counts.items():
     print(f"{name}: {tickets} tickets")
 
 print("\nTotal Bet Amount:", overall)
-print("15% of Total Bet Amount (excluded):", res)
-print("Remaining Total for Prizes:", remaining)
+# print("15% of Total Bet Amount (excluded):", res)
+# print("Remaining Total for Prizes:", remaining)
 print("\nPrize Distribution:")
 print(f"1st Place: {first_prize:.2f} GEL (50%)")
 print(f"2nd Place: {second_prize:.2f} GEL (30%)")
@@ -74,13 +74,3 @@ print(f"3rd Place: {third_prize:.2f} GEL (20%)")
 ask = input("\nDO YOU WANT TO SPIN THE WHEEL? (yes/no): ")
 if ask.lower() == "yes":
     lottery()
-
-
-
-
-
-
-
-
-
-

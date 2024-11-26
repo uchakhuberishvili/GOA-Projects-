@@ -26,7 +26,7 @@ games = ["chess", "codewars", "kahoot"]
 teams = create_teams(players)
 for i, team in enumerate(teams, start=1):
     print(f"Team {i}: {team[0]} and {team[1]}")
-    for seconds in range(5, 0, -1):
+    for seconds in range(1, 0, -1):
         print(f"Starting next team in {seconds} seconds...", end="\r")
         time.sleep(1)
     print("\n")
