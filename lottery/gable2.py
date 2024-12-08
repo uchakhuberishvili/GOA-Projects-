@@ -21,16 +21,16 @@ def lottery():
     print(f"🎉 3rd Place: {winner3} won {third_prize:.2f} GEL 🎉")
 
 bet = [
-    "ucha khuberishvili 1000000", "nikoloz qimeridze 10", "ilia dzindzibadze 1000000", 
-    "cotne gujabidze 10", "shalva shubitidze 10", "zuka abashidze 10", 
-    "giga khutsishvili 10", "berdia beqauri 10", "sandro zabakhidze 10", 
-    "vano motiashvili 10", "guram vakhtangashvili 10", "daniel abramiani 10", 
-    "nika edisherashvili 10", "giorgi xmaladze 10", "data fofxadze 10", 
-    "alex pitava 10", "gobron witlauri 10", "erekle kilasonia 10", 
-    "andria alavidze 10", "nika nutsubidze 10", "guram papunashvili 10", 
-    "nikoloz whitadze 10", "giorgi varadashvili 10", "nika kvaratshelia 10", 
-    "george gvritishvili 10", "saba isakadze 10", "ani razmadze 10", 
-    "luka lortqifanidze 10", "davit narimanidze 10", "giorgi shavadze 10",
+    "ვანო მოთიაშვილი 50",
+    "ზუკა აბაშიძე 50",
+    "გურამ პაპუნაშვილი 50",
+    "დათა დიასამიძე 50",
+    "გიორგი გვრიტიშვილი 50",
+    "გურამ ვახტანგაშვილი 50",
+    "ნიკოლოზ ჭიტაძე 50",
+    "სანდრო ზაბახიძე 50",
+    "ილია ძინძიბაძე 50",
+    "უჩა ხუბერიშვილი 50"
 ]
 
 
