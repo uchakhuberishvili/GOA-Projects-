@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background-color: #062e33;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        .container {
+            margin: 40px auto;
+            width: 90%;
+            max-width: 800px;
+        }
+        .reviews {
+            margin-top: 30px;
+        }
+        .review-card {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .review-card h3 {
+            margin-bottom: 10px;
+        }
+        .review-card p {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .review-card span {
+            font-weight: bold;
+        }
+        .form-wrapper {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+</head>
+<body>
+    <header>
+        <h1>Customer Reviews</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="loan-application.html">Loan</a>
+            <a href="products.html">Products</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="login.html">Logout</a>
+            <a href="view-card.html">My Card</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="form-wrapper">
+            <h2>Submit Your Review</h2>
+            <form id="reviewForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="rating">Rating (1-5):</label>
+                <input type="text" id="rating" name="rating" required>
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+
+        <div class="reviews" id="reviews">
+            <h2>What Our Customers Say</h2>
+            <div class="review-card">
+                <h3>John Doe</h3>
+                <p><span>Rating:</span> 5/5</p>
+                <p>Great service! The app is easy to use and the support team is very helpful.</p>
+            </div>
+            <div class="review-card">
+                <h3>Jane Smith</h3>
+                <p><span>Rating:</span> 4/5</p>
+                <p>Nice experience overall, but the mobile app could be improved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="reviews.js"></script>
+</body>
+</html>
