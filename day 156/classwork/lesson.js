@@ -1,13 +1,21 @@
-const jokes = [
-    "Why don't skeletons fight each other? They don't have the guts.",
-    "I told my wife she was drawing her eyebrows too high. She looked surprised.",
-    "I told my computer I needed a break, and it froze."
-  ];
-  
-  function getRandomJoke() {
-    const randomIndex = Math.floor(Math.random() * jokes.length);
-    console.log(jokes[randomIndex]);
-  }
-  
-  getRandomJoke();
-  
+// import React, { useState, useEffect } from 'react';
+
+// function BookLibrary() {
+//     const [books, setBooks] = useState([]);
+//     const [myLibrary, setMyLibrary] = useState([]);
+//     const booksApi = 'https://faker-api.vercel.app/api/books?_quantity=10';
+
+//     useEffect(() => {
+//         fetch(booksApi)
+//             .then(response => response.json())
+//             .then(data => setBooks(data))
+//             .catch(error => console.error('Error fetching books:', error));
+//     }, []);
+
+//     const addToMyLibrary = (book) => {
+//         if (!myLibrary.some(item => item.id === book.id)) {
+//             setMyLibrary([...myLibrary, book]);
+//         }
+//     };
+
+//     return
